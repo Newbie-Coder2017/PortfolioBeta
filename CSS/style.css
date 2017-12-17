@@ -725,7 +725,7 @@ max-height: 10.25rem;
 
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 400px) {
 
 #nav-hamburger {
 display: block;
@@ -759,7 +759,7 @@ width:100%;
 
 #self-portrait {
 order: unset;
-margin: unset;
+/* margin: unset; */
 }
 #mobile {
 display: inline;
