@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/style.css" type="text/css" rel="stylesheet"/>
+    <script src="JS/script.js"></script>
+    <title>Paul Ooi Design</title>
+  </head>
+  <body>
+    <header class="border wrapper">
+      <img id="wordmark" src="assets/PaulOoiDesignWordmark.svg" alt="Paul Ooi Design Logo Wordmark" title="Paul Ooi Design"/>
+      <nav class="border navigation" id="main-nav">
+        <div id="nav-hamburger">
+          <div class="bar" id="bar-1"></div>
+          <div class="bar" id="bar-2"></div>
+          <div class="bar" id="bar-3"></div>
+        </div>
+        <ul>
+          <li><a href="#">work</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="border">
+      <section class="border wrapper" id="banner">
+        <h1 id="job-titles">Developer<span id="plus">+</span><span id="designer">Designer</span></h1>
+            <p>Hi there, my name is Paul.</p>
+            <p>I create responsive websites with a user-focused experience.</p>
+        <div id="self-portrait">
+            <img id="desktop" src="assets/portraits/SelfPortrait-Leaning.png" alt="picture of me looking up at my job titles behind a wall"/>
+            <img id="tablet" src="assets/portraits/SelfPortrait-ArmsCrossed.png" alt="picture of me looking up at my job titles behind a wall"/>
+            <img id="mobile" src="assets/portraits/SelfPortrait-Looking-up.png" alt="picture of me looking up at my job titles behind a wall"/>
+            <!-- Place self portrait image here -->
+        </div>
+        <div class="wrapper" id="feature-focus">
+          <span class="button" id="contact-btn">Contact me</span>
+          <span id="scroll-down">Scroll down to see my work</span>
+          <a href="https://newbie-coder2017.github.io/ColmarAcademy/" target="_blank">
+          <img src="assets/images/FeatureProject.png" alt="Responsive Design of The Colmar Academy homepage"/>
+          </a>
+        <div id="toolbox">
+          <h2>My Toolbox:</h2>
+          <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>ASP.Net</li>
+              <li>SQL</li>
+          </ul>
+          <ul>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>SketchUp</li>
+          </ul>
+        </div></div>
+      </section>
+      <section id="work">
+        <h2 class="border sub-heading">my work</h2>
+        <ul>
+          <li class="border gallery-item">
+              <!-- Add gallery item thumbnail -->
+              <a href="#">
+                <img src="assets/images/Project1-thumb.jpg" alt=""/>
+              </a>
+              <div class="project-highlights">
+                  <ul>
+                      <li>Layout design</li>
+                      <li>Project Management</li>
+                      <li>HTML & CSS</li>
+                  </ul>
+                  <span>more details ...</span>
+              </div>
+          </li>
+          <li class="border gallery-item">
+              <a href="#">
+              <!-- Add gallery item thumbnail -->
+                <img src="assets/images/Project2-thumb.jpg" alt=""/>
+              </a>
+              <div class="project-highlights">
+                  <ul>
+                      <li>Layout design</li>
+                      <li>Project Management</li>
+                      <li>HTML & CSS</li>
+                  </ul>
+                  <span>more details ...</span>
+              </div>
+          </li>
+          <li class="border gallery-item">
+              <a href="#">
+                <!-- Add gallery item thumbnail -->
+                <img src="assets/images/Project3-thumb.jpg" alt=""/>
+              </a>
+              <div class="project-highlights">
+                  <ul>
+                      <li>Layout design</li>
+                      <li>Project Management</li>
+                      <li>HTML & CSS</li>
+                  </ul>
+                  <span>more details ...</span>
+              </div>
+          </li>
+          <li class="border gallery-item">
+              <a href="#">
+                <!-- Add gallery item thumbnail -->
+                <img src="assets/images/Project4-thumb.png" alt=""/>
+              </a>
+              <div class="project-highlights">
+                  <ul>
+                      <li>Layout design</li>
+                      <li>Project Management</li>
+                      <li>HTML & CSS</li>
+                  </ul>
+                  <span>more details ...</span>
+              </div>
+          </li>
+          <li class="border gallery-item">
+              <a href="#">
+                <!-- Add gallery item thumbnail -->
+                <img src="assets/images/Project5-thumb.jpg" alt=""/>
+              </a>
+              <div class="project-highlights">
+                  <ul>
+                      <li>Layout design</li>
+                      <li>Project Management</li>
+                      <li>HTML & CSS</li>
+                  </ul>
+                  <span>more details ...</span>
+              </div>
+          </li>
+          <li class="border gallery-item">
+              <a href="#">
+                <!-- Add gallery item thumbnail -->
+                <img src="assets/images/Project6-thumb.jpg" alt=""/>
+              </a>
+              <div class="project-highlights">
+                  <ul>
+                      <li>Layout design</li>
+                      <li>Project Management</li>
+                      <li>HTML & CSS</li>
+                  </ul>
+                  <span>more details ...</span>
+              </div>
+          </li>
+        </ul>
+        <button class="button" type="button" name="loadMore">Load More</button>
+      </section>
+      <div class="contact border wrapper">
+        <section class="contact border" id="contact-form">
+          <!-- Contact form for anyone that wants to collaborate on a project -->
+          <h2>Let&#39;s work together</h2>
+          <form action="#" method="post" name="contact">
+              <div><label id="name-lbl" for="name-input">Your Name</label>
+              <input type="text" id="name-input" name="user_name" required></div>
+              <div><label id="email-lbl" for="email-input">Your E-mail</label>
+              <input type="email" id="email-input" name="email" required></div>
+              <div><label id="message-lbl" for="message">Your Project details</label>
+              <textarea id="message" name="message" required></textarea></div>
+              <div>
+                <input class="button" type="submit" value="Send Message">
+                <label id="feedback">Thanks for contacting me. We’ll be in touch!</label>
+              </div>
+          </form>
+        </section>
+        <section class="contact border" id="social">
+          <h2>Let&#39;s get connected</h2>
+          <ul>
+            <li><a href="https://github.com/Newbie-Coder2017" target="_blank"><img src="assets/github-logo.png" alt="GitHub Logo" title="Let&#39;s fork each other"><span> github.com/Newbie-Coder2017</span></a></li>
+            <li><a href="https://behance.net/paulooidesign" target="_blank"><img src="assets/behance-logo.png" alt="Behance Logo" title="I also design stuff"><span> behance.net/paulooidesign</span></a></li>
+            <li><a href="https://linkedin.com/in/paulooi " target="_blank"><img src="assets/LinkedIn-Logo-R.png" alt="LinkedIn Logo" title="Find my resume here"><span> linkedin.com/in/paulooi</span></a></li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <h2 class="hidden">copyright</h2>
+      <span>&copy; Paul Ooi Design <span id="year">2017</span></span>
+      <ul><li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms of Use</a></li></ul>
+    </footer>
+  </body>
+</html>
