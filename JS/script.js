@@ -39,11 +39,28 @@ var hamburger = document.getElementById('nav-hamburger');
 var mobileMenu = document.getElementById('main-nav').getElementsByTagName('ul');
 function menuHamburger() {
   mobileMenu[0].classList.toggle("open");
-  hamburger.classList.toggle("open");  
+  hamburger.classList.toggle("open");
   bars[0].classList.toggle("open");
   bars[1].classList.toggle("open");
   bars[2].classList.toggle("open");
 }//End of menuHamburger
 hamburger.addEventListener('click', menuHamburger, false);
+
+//Show user feedback from Contact submit FORM
+var formHandler = document.forms.contact;
+var userFeedback = document.getElementById('feedback');
+function thankYouMsg() {
+    if (formHandler['user_name'].value=="" || formHandler['email'].value=="" || formHandler['message'].value==""){
+    console.log('this fired');
+    userFeedback.innerHTML = "Your form is incomplete."
+    userFeedback.style.display = "inline";
+    return false;
+    }
+    userFeedback.innerHTML = "Thanks for contacting me. We’ll be in touch!"
+    userFeedback.style.display = "inline";
+    console.log('form submit');
+return true;
+}//end thankYouMsg
+formHandler.onsubmit=thankYouMsg;
 
 }//End of pageReady
