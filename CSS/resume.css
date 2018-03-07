@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,500,700|Lato:900');
+/************************************************************
+TABLE OF CONTENTS
+*************************************************************
+1) GENERAL
+2) HEADINGS
+3) LISTS
+4) EXPERIENCE DETAILS
+***********************************************************/
+
+/*1) GENERAL*/
+
+html {
+    box-sizing: content-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+}
+
+body {
+    max-width: 1024px;
+    margin: 0px auto;
+    background-color: rgb(245, 247, 250);
+    font-family: 'Barlow', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 1em;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#contact {
+    flex: 1 0 100%;
+    /* order: 3; */
+}
+
+#software {
+    /* order: 4; */
+    /* flex: 2 1 auto; */
+}
+
+#highlights {
+    /* order: 5; */
+    flex: 3 1 auto;
+}
+
+#skills {
+    /* order: 6; */
+    /* flex: 2 1 auto; */
+}
+
+#education {
+    /* order: 7; */
+    flex: 3 1 auto;
+}
+
+#awards {
+    flex: 3 1 auto;
+}
+
+/* #col1 {
+    width: 20%;
+    display: inline-block;
+}
+
+#col2 {
+    width: 80%;
+    display: inline-block;
+} */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+/*2) HEADINGS */
+
+h1 {
+    flex: 1 1 100%;
+    /* order: 1; */
+    font-size: 3em;
+    /* display: inline-block; */
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h2 {
+    /* order: 2; */
+    flex: 1 1 100%;
+    margin-top: 0.5em;
+    font-size: 2.15em;
+    text-align: center;
+}
+
+/* h2::before {
+    content: " - ";
+} */
+
+h3 {
+    color: rgb(174, 33, 66);
+    font-size: 2em;
+}
+
+h4 {
+    display: inline-block;
+    margin: 0;
+    font-size: 1.15em;
+    vertical-align: inherit;
+}
+
+h5 {
+    margin: 0 0 0.5em 0;
+    flex: 1 0 100%;
+    font-weight: 500;
+}
+
+/*3) LISTS */
+
+.fa {
+    margin-right: 0.5em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+ul.no-bullet {
+    padding: 0;
+    list-style: none;
+}
+
+ul:not(.no-bullet) {
+    list-style: disc;
+}
+
+#contact li {
+    display: inline-block;
+}
+
+#contact li:nth-child(2) {
+    margin: 0 3em;
+}
+
+#contact ul {
+    text-align: center;
+}
+
+#education li, #experience>ul>li, #experience2>ul>li, #volunteer>ul>li, #awards li {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5em 0;
+}
+
+li {
+    line-height: 1.3em;
+    padding-right: 1em;
+}
+
+/*4) EXPERIENCE DETAILS */
+
+.leader {
+    flex: 1 1 auto;
+    border-bottom: 2px dotted black;
+    margin: 0 1em;
+}
+
+.responsibilities {
+    flex: 1 0 100%;
+}
+
+.chronology {
+    font-style: italic;
+}
+
+/*4) AWARDS */
+
+.standing {
+    /* font-size: 1.4em; */
+    font-weight: 500;
+}
+
+.standing::after {
+    content: " - Place";
+    margin-right: 1em;
+    vertical-align: text-bottom;
+}
