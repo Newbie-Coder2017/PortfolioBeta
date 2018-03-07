@@ -38,8 +38,8 @@
             <!-- Place self portrait image here -->
         </div>
         <div class="wrapper" id="feature-focus">
-          <span class="button" id="contact-btn">Contact me</span>
-          <span id="scroll-down">Scroll down to see my work</span>
+          <!-- <span class="button" id="contact-btn">Contact me</span>
+          <span id="scroll-down">Scroll down to see my work</span> -->
           <a href="https://newbie-coder2017.github.io/ColmarAcademy/" target="_blank">
           <img src="assets/images/FeatureProject.png" alt="Responsive Design of The Colmar Academy homepage"/>
           </a>
@@ -61,92 +61,22 @@
         </div>
       </section>
       <section id="work">
-        <h2 class="border sub-heading">My Work</h2>
-        <ul>
-          <li class="border gallery-item">
-              <!-- Add gallery item thumbnail -->
-              <a href="#">
-                <img src="assets/images/Project1-thumb.jpg" alt="Portfolio Website"/>
-              </a>
-              <div class="project-highlights">
-                  <ul>
-                      <li>Layout design</li>
-                      <li>HTML & CSS</li>
-                  </ul>
-                  <span>more details ...</span>
-              </div>
-          </li>
-          <li class="border gallery-item">
-              <a href="#">
-              <!-- Add gallery item thumbnail -->
-                <img src="assets/images/Project2-thumb.jpg" alt="Habitat for Humanity 3D modeling"/>
-              </a>
-              <div class="project-highlights">
-                  <ul>
-                      <li>3D Modeling</li>
-                      <li>Volunteer Project</li>
-                  </ul>
-                  <span>more details ...</span>
-              </div>
-          </li>
-          <li class="border gallery-item">
-              <a href="#">
-                <!-- Add gallery item thumbnail -->
-                <img src="assets/images/Project3-thumb.jpg" alt="Business card Design"/>
-              </a>
-              <div class="project-highlights">
-                  <ul>
-                      <li>Graphic design</li>
-                      <li>Project Management</li>
-                  </ul>
-                  <span>more details ...</span>
-              </div>
-          </li>
-          <li class="border gallery-item">
-              <a href="#">
-                <!-- Add gallery item thumbnail -->
-                <img src="assets/images/Project4-thumb.png" alt="ColmarAcademy responsive website project through Codecademy"/>
-              </a>
-              <div class="project-highlights">
-                  <ul>
-                      <li>Graphic design</li>
-                      <li>Concept Project</li>
-                      <li>HTML & CSS</li>
-                  </ul>
-                  <span>more details ...</span>
-              </div>
-          </li>
-          <li class="border gallery-item">
-              <a href="#">
-                <!-- Add gallery item thumbnail -->
-                <img src="assets/images/Project5-thumb.jpg" alt="Press coverage brochure for Korhani home"/>
-              </a>
-              <div class="project-highlights">
-                  <ul>
-                      <li>Graphic design</li>
-                      <li>Photo Editing</li>
-                      <li>Pre-press setup</li>
-                  </ul>
-                  <span>more details ...</span>
-              </div>
-          </li>
-          <li class="border gallery-item">
-              <a href="#">
-                <!-- Add gallery item thumbnail -->
-                <img src="assets/images/Project6-thumb.jpg" alt="Vinyl decals for White Water Music Studio"/>
-              </a>
-              <div class="project-highlights">
-                  <ul>
-                      <li>Graphic design</li>
-                      <li>Freelance Project</li>
-                      <li>Illustration</li>
-                      <li>Photo Editing</li>
-                  </ul>
-                  <span>more details ...</span>
-              </div>
-          </li>
-        </ul>
-        <button class="button" type="button" name="loadMore">Load More</button>
+        <h2 class="border sub-heading">My Web Development Work</h2>
+        <div id="gallery">
+			<div id="current"></div>
+        	<figure class="thumb"><img src="assets/images/thumb-css-animation.jpg" alt=""/></figure>
+        	<figure class="thumb"><img src="assets/images/thumb-restaurant.jpg" alt=""/></figure>
+        	<figure class="thumb"><img src="assets/images/thumb-space-colonies.jpg" alt=""/></figure>
+        </div>
+		<div>
+			<div class="project">
+				<figure></figure>
+				<h3 id="project-name"></h3>
+				<p id="technology"></p>
+				<button type="button" id="view" value="View Project" />
+				<p id="description"></p>
+			</div>
+		</div>
       </section>
       <div class="contact border wrapper">
         <section class="hidden contact border" id="contact-form">

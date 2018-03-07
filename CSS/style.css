@@ -408,6 +408,10 @@ h2 {
 
 /*7) CONTACT FORM*/
 
+#contact-form {
+    display: none;
+}
+
 form {
     display: flex;
     flex-flow: row wrap;
@@ -552,7 +556,7 @@ form input {
     #banner p:last-of-type {
         order: 3;
         left: -9%;
-        font-size: .8rem;
+        /* font-size: .8rem; */
     }
     #feature-focus {
         margin-left: 3rem;
