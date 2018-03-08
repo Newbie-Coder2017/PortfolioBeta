@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="CSS/style.css" type="text/css" rel="stylesheet"/>
-    <script src="JS/script.js"></script>
-    <title>Paul Ooi Design</title>
+    <link href="portfolio/CSS/style.css" type="text/css" rel="stylesheet"/>
+    <script src="portfolio/JS/script.js"></script>
+    <title>Paul Ooi Development &amp; Design</title>
   </head>
   <body>
     <header class="border wrapper">
       <h2 class="hidden">Paul Ooi Design Portfolio</h2>
-      <img id="wordmark" src="assets/paulooidev-wordmark.svg" alt="Paul Ooi Logo Wordmark" title="Paul Ooi Development"/>
+      <img id="wordmark" src="portfolio/assets/paulooidev-wordmark.svg" alt="Paul Ooi Logo Wordmark" title="Paul Ooi Development"/>
       <nav class="border navigation" id="main-nav">
         <div id="nav-hamburger">
           <div class="bar" id="bar-1"></div>
@@ -19,6 +19,7 @@
         </div>
         <ul>
           <li><a href="#work">work</a></li>
+          <li><a href="portfolio/resume.html" target="_blank">resume</a></li>
           <!-- <li><a href="#">About</a></li>
           <li><a href="#">blog</a></li> -->
           <li><a href="#social">contact</a></li>
@@ -32,16 +33,16 @@
             <p>Hi there, my name is Paul.</p>
             <p>I create responsive websites with a user-focused experience.</p>
         <div id="self-portrait">
-            <img id="desktop" src="assets/portraits/SelfPortrait-Leaning.png" alt="picture of me leaning against my job titles"/>
-            <img id="tablet" src="assets/portraits/SelfPortrait-ArmsCrossed.png" alt="picture of me with arms crossed"/>
-            <img id="mobile" src="assets/portraits/SelfPortrait-Looking-up.png" alt="picture of me looking up at my job titles behind a wall"/>
+            <img id="desktop" src="portfolio/assets/portraits/SelfPortrait-Leaning.png" alt="picture of me leaning against my job titles"/>
+            <img id="tablet" src="portfolio/assets/portraits/SelfPortrait-ArmsCrossed.png" alt="picture of me with arms crossed"/>
+            <img id="mobile" src="portfolio/assets/portraits/SelfPortrait-Looking-up.png" alt="picture of me looking up at my job titles behind a wall"/>
             <!-- Place self portrait image here -->
         </div>
         <div class="wrapper" id="feature-focus">
           <!-- <span class="button" id="contact-btn">Contact me</span>
           <span id="scroll-down">Scroll down to see my work</span> -->
           <a href="https://newbie-coder2017.github.io/ColmarAcademy/" target="_blank">
-          <img src="assets/images/FeatureProject.png" alt="Responsive Design of The Colmar Academy homepage"/>
+          <img src="portfolio/assets/images/FeatureProject.png" alt="Responsive Design of The Colmar Academy homepage"/>
           </a>
           <div id="toolbox">
             <h2 title="A list of my skills">My Toolbox:</h2>
@@ -61,21 +62,52 @@
         </div>
       </section>
       <section id="work">
-        <h2 class="border sub-heading">My Web Development Work</h2>
+        <h2 class="border sub-heading">My Work</h2>
         <div id="gallery">
 			<div id="current"></div>
-        	<figure class="thumb"><img src="assets/images/thumb-css-animation.jpg" alt=""/></figure>
-        	<figure class="thumb"><img src="assets/images/thumb-restaurant.jpg" alt=""/></figure>
-        	<figure class="thumb"><img src="assets/images/thumb-space-colonies.jpg" alt=""/></figure>
+        	<figure class="thumb"><img src="portfolio/assets/images/thumb-css-animation.jpg" alt=""/></figure>
+        	<figure class="thumb"><img src="portfolio/assets/images/thumb-restaurant.jpg" alt=""/></figure>
+        	<figure class="thumb"><img src="portfolio/assets/images/thumb-space-colonies.jpg" alt=""/></figure>
         </div>
 		<div>
 			<div class="project">
-				<figure></figure>
-				<h3 id="project-name"></h3>
-				<p id="technology"></p>
-				<button type="button" id="view" value="View Project" />
-				<p id="description"></p>
+				<figure><img src="portfolio/assets\images\focus-css-animation.jpg" alt="A simple cartoon style house with solid blue sky background"/></figure>
+				<h3 class="project-name">Animated House</h3>
+				<ul class="technology">
+					<li>HTML5</li>
+					<li>CSS</li>
+					<li>LESS</li>
+					<li>JavaScript</li>
+				</ul>
+				<a href="http://www.paulooidesign.ca/humber/sem1/5104/final/" target="_blank" class="button">View Project</a>
+				<p class="description">I was experimenting with CSS animation on this project. At the time I was working with Habitat for Humanity on a side&hyphen;project and I was inspired with the idea of making an animated house. I used LESS to help code some of browser compatibility</p>
 			</div>
+<!--
+			<div class="project">
+				<figure><img src="portfolio/assets\images\focus-css-animation.jpg" alt="A simple cartoon style house with solid blue sky background"/></figure>
+				<h3 class="project-name">Animated House</h3>
+				<ul class="technology">
+					<li>HTML5</li>
+					<li>CSS</li>
+					<li>LESS</li>
+					<li>JavaScript</li>
+				</ul>
+				<a href="http://www.paulooidesign.ca/humber/sem1/5104/final/" target="_blank" class="button">View Project</a>
+				<p class="description">I was experimenting with CSS animation on this project. At the time I was working with Habitat for Humanity on a side&hyphen;project and I was inspired with the idea of making an animated house. I used LESS to help code some of browser compatibility</p>
+			</div>
+
+			<div class="project">
+				<figure><img src="portfolio/assets\images\focus-css-animation.jpg" alt="A simple cartoon style house with solid blue sky background"/></figure>
+				<h3 class="project-name">Space Colonies</h3>
+				<ul class="technology">
+					<li>JavaScript</li>
+					<li>HTML5</li>
+					<li>CSS</li>
+					<li>Adobe Illustrator</li>
+				</ul>
+				<a href="http://www.paulooidesign.ca/humber/sem1/5104/final/" target="_blank" class="button">View Project</a>
+				<p class="description">I joined a team of fellow web developers at the Global Game Jam 2018. We made an online 2&hyphen;Player game that we w</p>
+			</div> -->
 		</div>
       </section>
       <div class="contact border wrapper">
@@ -98,9 +130,9 @@
         <section class="contact border" id="social">
           <h2 title="Connect through Social Media">Let&#39;s get connected</h2>
           <ul>
-            <li><a href="https://github.com/Newbie-Coder2017" target="_blank"><img src="assets/github-logo.png" alt="GitHub Logo" title="Let&#39;s fork each other"><span> github.com/Newbie-Coder2017</span></a></li>
-			<li><a href="https://linkedin.com/in/paulooi " target="_blank"><img src="assets/LinkedIn-Logo-R.png" alt="LinkedIn Logo" title="Find my resume here"><span> linkedin.com/in/paulooi</span></a></li>
-            <li><a href="https://behance.net/paulooidesign" target="_blank"><img src="assets/behance-logo.png" alt="Behance Logo" title="I also design stuff"><span> behance.net/paulooidesign</span></a></li>
+            <li><a href="https://github.com/Newbie-Coder2017" target="_blank"><img class="logo" src="portfolio/assets/github-logo.png" alt="GitHub Logo" title="Let&#39;s fork each other"><span> github.com/Newbie-Coder2017</span></a></li>
+			<li><a href="https://linkedin.com/in/paulooi " target="_blank"><img class="logo" src="portfolio/assets/LinkedIn-Logo-R.png" alt="LinkedIn Logo" title="Find my resume here"><span> linkedin.com/in/paulooi</span></a></li>
+            <li><a href="https://behance.net/paulooidesign" target="_blank"><img class="logo" src="portfolio/assets/behance-logo.png" alt="Behance Logo" title="I also design stuff"><span> behance.net/paulooidesign</span></a></li>
           </ul>
         </section>
       </div>
