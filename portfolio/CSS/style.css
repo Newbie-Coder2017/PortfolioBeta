@@ -113,8 +113,9 @@ footer li {
 }
 
 .button, .button:visited, .button:active {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
     /* background-color: transparent;
     color: rgb(174, 33, 66);
     border: 1px solid rgb(174, 33, 66); */
@@ -330,7 +331,11 @@ h2 {
 }
 
 .thumb {
-    margin: 0.25em;
+    margin: 0.25em 1em;
+}
+
+.thumb:hover {
+    cursor: pointer;
 }
 
 .project {
@@ -352,8 +357,9 @@ h2 {
     flex: 0 1 auto;
 }
 
-.project-name, .technology, .description {
+.project-name, .technology {
     flex: 2 1 auto;
+    margin: 0 0 1em 0;
 }
 
 .technology {
@@ -375,73 +381,12 @@ h2 {
 }
 
 .description {
+    flex: 2 1 auto;
     font-weight: 300;
     color: rgb(64, 64, 64);
+    margin: 0;
 }
 
-/* .gallery-item {
-    flex: 0 0 31%;
-    height: 12.5rem;
-    display: inline-block;
-    margin: 0.75%;
-    position: relative;
-    overflow: hidden;
-    background-color: rgb(245, 247, 250);
-}
-
-.gallery-item ul {
-    margin: 20% 0;
-    padding: 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.gallery-item img {
-    max-height: 12.5rem;
-    object-fit: cover;
-}
-
-.gallery-item:hover img {
-    opacity: 0.15;
-    filter: grayscale(100%);
-    transition: all 0.3s linear 100ms;
-}
-
-.gallery-item:hover {
-    background-color: transparent;
-    transition: all 0.3s linear 100ms;
-}
-
-.project-highlights {
-    background-color: rgb(174, 33, 66);
-    line-height: 1.5rem;
-    position: absolute;
-    /* font-family: 'Lato', Helvetica, Arial, sans-serif; */
-
-text-align: right;
-height: 100%;
-width: 100%;
-color: white;
-z-index: -10;
-top: 0;
-}
-
-.project-highlights ul {
-    list-style: none;
-}
-
-.project-highlights span {
-    padding-right: 0.5rem;
-    position: absolute;
-    bottom: 1%;
-    right: 1%;
-    font-weight: 300;
-    font-style: italic;
-}
-
-*/
 /*6) SOCIAL MEDIA*/
 
 #social img {
@@ -497,7 +442,6 @@ form {
 }
 
 #email-input, #name-input, #message {
-    /* font-family: 'Merriweather', Garamond, "Times New Roman", serif; */
     color: rgb(174, 33, 66);
     border: 0;
     background-color: rgb(245, 247, 250);

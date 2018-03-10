@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="portfolio/CSS/style.css" type="text/css" rel="stylesheet"/>
     <script src="portfolio/JS/script.js"></script>
+    <script src="portfolio/JS/gallery.js"></script>
     <title>Paul Ooi Development &amp; Design</title>
   </head>
   <body>
     <header class="border wrapper">
       <h2 class="hidden">Paul Ooi Design Portfolio</h2>
-      <img id="wordmark" src="portfolio/assets/paulooidev-wordmark.svg" alt="Paul Ooi Logo Wordmark" title="Paul Ooi Development"/>
+      <a href="http://www.paulooidesign.ca"><img id="wordmark" src="portfolio/assets/paulooidev-wordmark.svg" alt="Paul Ooi Logo Wordmark" title="Paul Ooi Development"/></a>
       <nav class="border navigation" id="main-nav">
         <div id="nav-hamburger">
           <div class="bar" id="bar-1"></div>
@@ -39,8 +40,6 @@
             <!-- Place self portrait image here -->
         </div>
         <div class="wrapper" id="feature-focus">
-          <!-- <span class="button" id="contact-btn">Contact me</span>
-          <span id="scroll-down">Scroll down to see my work</span> -->
           <a href="https://newbie-coder2017.github.io/ColmarAcademy/" target="_blank">
           <img src="portfolio/assets/images/FeatureProject.png" alt="Responsive Design of The Colmar Academy homepage"/>
           </a>
@@ -70,21 +69,8 @@
         	<figure class="thumb"><img src="portfolio/assets/images/thumb-space-colonies.jpg" alt=""/></figure>
         </div>
 		<div>
-			<div class="project">
-				<figure><img src="portfolio/assets\images\focus-css-animation.jpg" alt="A simple cartoon style house with solid blue sky background"/></figure>
-				<h3 class="project-name">Animated House</h3>
-				<ul class="technology">
-					<li>HTML5</li>
-					<li>CSS</li>
-					<li>LESS</li>
-					<li>JavaScript</li>
-				</ul>
-				<a href="http://www.paulooidesign.ca/humber/sem1/5104/final/" target="_blank" class="button">View Project</a>
-				<p class="description">I was experimenting with CSS animation on this project. At the time I was working with Habitat for Humanity on a side&hyphen;project and I was inspired with the idea of making an animated house. I used LESS to help code some of browser compatibility</p>
-			</div>
-<!--
-			<div class="project">
-				<figure><img src="portfolio/assets\images\focus-css-animation.jpg" alt="A simple cartoon style house with solid blue sky background"/></figure>
+			<div class="project hidden">
+				<figure><img src="portfolio/assets/images/focus-css-animation.jpg" alt="A simple cartoon style house with solid blue sky background"/></figure>
 				<h3 class="project-name">Animated House</h3>
 				<ul class="technology">
 					<li>HTML5</li>
@@ -97,7 +83,21 @@
 			</div>
 
 			<div class="project">
-				<figure><img src="portfolio/assets\images\focus-css-animation.jpg" alt="A simple cartoon style house with solid blue sky background"/></figure>
+				<figure><img src="portfolio/assets/images/focus-restaurant.jpg" alt="A simple cartoon style house with solid blue sky background"/></figure>
+				<h3 class="project-name">Seasoning Shack Restaurant</h3>
+				<ul class="technology">
+					<li>JavaScript</li>
+					<li>HTML5</li>
+					<li>CSS</li>
+					<li>Adobe Photoshop</li>
+					<li>Adobe Illustrator</li>
+				</ul>
+				<a href="https://newbie-coder2017.github.io/SeasoningShack/" target="_blank" class="button">View Project</a>
+				<p class="description">The Seasoning Shack is a fictitious restaurant that needed a website to showcase their business. Out of our group of developers I was responsible for the Event booking, Location and Home pages. The main focus was to explore our use of the JavaScript language. My pages include an automated promotion slider, form validation, store hours that update depending on current day and time, an accordion style image gallery, and a responsive navigation header. I also helped with the design and photo editing.</p>
+			</div>
+
+			<div class="project hidden">
+				<figure><img src="portfolio/assets/images/focus-space-colonies.jpg" alt="A simple cartoon style house with solid blue sky background"/></figure>
 				<h3 class="project-name">Space Colonies</h3>
 				<ul class="technology">
 					<li>JavaScript</li>
@@ -105,9 +105,9 @@
 					<li>CSS</li>
 					<li>Adobe Illustrator</li>
 				</ul>
-				<a href="http://www.paulooidesign.ca/humber/sem1/5104/final/" target="_blank" class="button">View Project</a>
-				<p class="description">I joined a team of fellow web developers at the Global Game Jam 2018. We made an online 2&hyphen;Player game that we w</p>
-			</div> -->
+				<a href="https://galaxy-control.herokuapp.com/" target="_blank" class="button">View Project</a>
+				<p class="description">I joined a team of fellow web developers at the Global Game Jam 2018. We made an online 2&hyphen;Player game that requires each player to claim as many planets as possible before their opponent. I worked on the code behind populating values and styling the Heads-up Display, the planet detail mouseover feature, the initial splash page, as well as preparing suitable images for our team to use. If you&apos;d like to try playing our game, ensure you and your opponent open the game in each other&apos;s browser. Or play against yourself by opening the game in 2 browser windows.</p>
+			</div>
 		</div>
       </section>
       <div class="contact border wrapper">

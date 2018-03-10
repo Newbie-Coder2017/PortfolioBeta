@@ -14,11 +14,10 @@ function pageReady() {
 
     //if there's input inside, hide leave label hidden (apply hidden class)
     function checkInputHideLabel(targetParent, inputField) {
-        // console.log(inputField);
+
         if (inputField.value !== "") {
             targetParent.firstChild.className = "hidden";
         } else {
-            // console.log('hidden placed');
             targetParent.firstChild.removeAttribute("class");
         }
     }
