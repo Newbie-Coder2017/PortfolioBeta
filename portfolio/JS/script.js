@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", pageReady, false);
 
 //CONTACT FORM VARIABLES
 var formHandler = document.forms.contact;
-var userFeedback = document.getElementById('feedback');
+var feedback = document.querySelector('#feedback');
 var inputElements = document.querySelectorAll('input[id$="-input"], #message');
 var labelElements = document.querySelectorAll('label[id$="-lbl"]');
 
@@ -23,9 +23,9 @@ function pageReady() {
     });
 
     hamburger.addEventListener('click', menuHamburger, false);
-    
-    // formHandler.onsubmit = thankYouMsg;
-
+    if (feedback.innerHTML !== "") {
+        feedback.focus();
+    }
 } //END OF PAGEREADY
 
 
@@ -73,19 +73,3 @@ function checkInputHideLabel(inputFocus) {
         inputFocus.previousElementSibling.style.fontSize = '0.9em';
     }
 } //END OF CHECKINPUTHIDELABEL
-
-/**
- * OUTPUT A FEEDBACK MESSAGE TO THE USER FILLING IN THE CONTACT FORM
- */
-function thankYouMsg() {
-    if (formHandler['user_name'].value == "" || formHandler['email'].value == "" || formHandler['message'].value == "") {
-        console.log('this fired');
-        userFeedback.innerHTML = "Your form is incomplete.";
-        userFeedback.style.display = "inline";
-        return false;
-    }
-    userFeedback.innerHTML = "Thanks for contacting me. We’ll be in touch!";
-    userFeedback.style.display = "inline";
-    console.log('form submit');
-    return true;
-} //END THANKYOUMSG

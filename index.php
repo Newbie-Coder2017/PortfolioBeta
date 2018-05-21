@@ -66,7 +66,7 @@ require_once 'project-collection.php';
             <div id="contact" class="row">
                 <section id="messageForm" class="d-none d-sm-block mx-0 p-3 col-12 col-lg-8">
                     <h2 class="text-center py-3">Let&#39;s work together</h2>
-                    <form action="#" method="post" name="contact" class="container-fluid px-2">
+                    <form action="contactForm.php" method="post" name="contact" class="container-fluid px-2">
                         <div class="row mb-3 mb-lg-5 justify-content-between">
                             <div class="col-4 pl-0">
                                 <label class="p-2" id="name-lbl" for="name-input">Your Name</label>
@@ -81,9 +81,13 @@ require_once 'project-collection.php';
                             <label class="p-2" id="message-lbl" for="message">Your Project details</label>
                             <textarea class="col-12" id="message" name="message"></textarea>
                         </div>
-                        <div class="row">
-                            <input class="btn" type="submit" value="Send Message">
-                            <label class="col-8" id="feedback"></label>
+                        <div class="row align-items-center">
+                            <input class="btn" type="submit" value="Send Message" name="contactBtn"/>
+                            <label class="col-8" id="feedback"><?php 
+                            if(isset($_GET['feedback'])) {
+                                echo htmlentities($_GET['feedback']);
+                            }
+                            ?></label>
                         </div>
                     </form>
                 </section>            
