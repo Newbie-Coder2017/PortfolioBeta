@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,500,700|Lato:900');
+/************************************************************
+OVERALL STYLING TO OVERIDE BOOTSTRAP.
+***********************************************************/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Barlow', Helvetica, Arial, sans-serif;
+    background-color: rgb(245, 247, 250);
+    font-size: 16px;
+    font-weight: 500;
+    overflow-x: hidden;
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}

@@ -1,0 +1,410 @@
+/************************************************************
+TABLE OF CONTENTS
+*************************************************************
+1) GENERAL STYLING
+4) HEADINGS
+5) GALLERY
+6) SOCIAL MEDIA
+7) CONTACT FORM
+8) MEDIA QUERIES
+***********************************************************/
+
+/*1) GENERAL STYLING*/
+
+body, a, a:hover {
+    color: rgb(174, 33, 66);
+}
+
+header {
+    background-color: rgb(245, 247, 250);
+    top: 0;
+    z-index: 20;
+    justify-content: space-between;
+}
+
+main {
+    position: relative;
+}
+
+#contact-form {
+    background-color: rgb(231, 204, 213);
+    padding: 1rem;
+    flex: 1 1 70%;
+}
+
+#social {
+    background-color: rgb(187, 203, 226);
+    padding: 1rem;
+    flex: 1 1 30%;
+}
+
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    padding: 1rem;
+    font-weight: normal;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline-block;
+    padding: 0 1.5rem;
+}
+
+.button, .button:visited, .button:active, .btn {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    font-kerning: auto;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgb(174, 33, 66);
+    color: rgb(245, 247, 250);
+}
+
+.button:hover {
+    background-color: rgb(81, 141, 191);
+    text-decoration: underline;
+}
+
+/*4) HEADINGS*/
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#contact-form h2, #social h2 {
+    text-align: left;
+    font-size: 1.25rem;
+}
+
+.sub-heading {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+/*5) GALLERY*/
+
+#work>ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    text-align: center;
+}
+
+#gallery {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 3em;
+}
+
+#current {
+    position: absolute;
+}
+
+.thumb {
+    margin: 0.25em 1em;
+}
+
+.img-container img {
+    transform: scale(1);
+    transition: all 200ms linear;
+}
+.img-container img:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    background-color: rgba(174, 33, 66, 0.7);
+    transition: all 200ms linear;
+}
+
+.project-name {
+    font-weight: 700;
+}
+.project {
+    padding: 2.5em 0;
+}
+
+.project:nth-child(odd) {
+    background-color: rgba(81, 141, 191, 0.2);
+}
+
+.project-anchor {
+    position: relative;
+    top: -3em;
+}
+
+.controls a, .controls a:visited {
+    color: #FFF;
+}
+
+.controls a:hover {
+    color: rgb(87, 196, 230);
+}
+.controls a:active {
+    color: #FFF;
+    background-color: rgb(81, 141, 191);
+}
+
+ .technology {
+    font-weight: 700;
+    flex: 2 1 auto;
+    margin: 0 0 1em 0;
+}
+
+.technology {
+    list-style: none;
+    padding: 0;
+    color: rgb(64, 64, 64);
+}
+
+.technology li {
+    display: inline-block;
+}
+
+.technology li::after {
+    content: ", ";
+}
+
+.technology li:last-child::after {
+    content: unset;
+}
+
+.description {
+    flex: 2 1 auto;
+    font-weight: 500;
+    color: rgb(64, 64, 64);
+    margin: 0;
+}
+
+.description a {
+    font-weight: 700;
+}
+
+/*6) SOCIAL MEDIA*/
+
+#social img {
+    max-width: 3.75rem;
+    margin-right: 1.25rem;
+    vertical-align: middle;
+}
+
+#social ul {
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-around;
+}
+
+#social li {
+    margin: 1.25rem;
+}
+
+#social a {
+    font-weight: 300;
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(64, 64, 64);
+}
+
+#social .logo {
+    max-width: 60px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+#social span, #social li {
+    vertical-align: middle;
+}
+
+/*7) CONTACT FORM*/
+
+#contact-form {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#email-input, #name-input, #message {
+    color: rgb(174, 33, 66);
+    border: 0;
+    background-color: rgb(245, 247, 250);
+}
+
+#email-input:focus, #name-input:focus, #message:focus {
+    background-color: rgb(165, 227, 251);
+}
+
+#message {
+    width: 97.5%;
+    flex: 1 0 auto;
+    min-height: 10rem;
+    max-height: 10rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#feedback {
+    color: rgb(174, 33, 66);
+    font-style: italic;
+    font-weight: 300;
+    position: relative;
+    margin: 1rem 2rem;
+    display: none;
+}
+
+form label {
+    position: absolute;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.9rem;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+form div:nth-child(1) {
+    position: relative;
+    flex: 1 1 auto;
+    margin: 0.5rem 1.5rem 1rem 0;
+}
+
+form div:nth-child(2) {
+    position: relative;
+    flex: 3 0 auto;
+    margin: 0.5rem 0 1rem;
+}
+
+form div:nth-child(3), form div:nth-child(4) {
+    position: relative;
+    width: 100%;
+}
+
+form .button {
+    max-width: 20%;
+    min-width: 9rem;
+    vertical-align: middle;
+}
+
+form input {
+    max-width: 98%;
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+/*8) MEDIA QUERIES*/
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
+
+@media all and (max-width:768px) {
+    form .button {
+        background-color: rgba(174, 33, 66, 0.75);
+        color: rgb(245, 247, 250);
+        border: 0;
+    }
+    #social {
+        flex: 1 0 100%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
+    #social h2 {
+        max-width: 50%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    #social ul {
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    #social li {
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 1rem 0.5rem;
+    }
+    #social img {
+        max-height: 10.25rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #contact-form {
+        display: none;
+    }
+    #social {
+        flex-flow: column nowrap;
+        padding: 2rem 0;
+    }
+    #social h2 {
+        max-width: unset;
+    }
+    #social ul {
+        margin-top: 1rem;
+    }
+}
+
+@media all and (max-width: 400px) {
+   
+    #social h2 {
+        font-size: 1rem;
+        max-width: unset;
+        margin: 1rem auto;
+    }
+    #social ul {
+        justify-content: space-around;
+    }
+    #social img {
+        margin: 0 auto;
+    }
+    #social li {
+        margin: 0 5%;
+    }
+    footer {
+        justify-content: center;
+    }
+    footer ul {
+        display: none;
+    }
+}

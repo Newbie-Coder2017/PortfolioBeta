@@ -1,5 +1,6 @@
-window.addEventListener("load", pageReady, false);
-
+// window.addEventListener("load", pageReady, false);
+// document.addEventListener("ready", pageReady, false);
+document.addEventListener("DOMContentLoaded", pageReady, false);
 function pageReady() {
 
     //Form input fields
@@ -21,26 +22,26 @@ function pageReady() {
             targetParent.firstChild.removeAttribute("class");
         }
     }
-    //Listener for Form Label hide and show
-    nameInput.addEventListener('focus', function () {
-        hideLabel(this.parentElement);
-    }, false);
-    emailInput.addEventListener('focus', function () {
-        hideLabel(this.parentElement);
-    }, false);
-    textArea.addEventListener('focus', function () {
-        hideLabel(this.parentElement);
-    }, false);
+    // //Listener for Form Label hide and show
+    // nameInput.addEventListener('focus', function () {
+    //     hideLabel(this.parentElement);
+    // }, false);
+    // emailInput.addEventListener('focus', function () {
+    //     hideLabel(this.parentElement);
+    // }, false);
+    // textArea.addEventListener('focus', function () {
+    //     hideLabel(this.parentElement);
+    // }, false);
 
-    nameInput.addEventListener('blur', function () {
-        checkInputHideLabel(this.parentElement, this);
-    }, false);
-    emailInput.addEventListener('blur', function () {
-        checkInputHideLabel(this.parentElement, this);
-    }, false);
-    textArea.addEventListener('blur', function () {
-        checkInputHideLabel(this.parentElement, this);
-    }, false);
+    // nameInput.addEventListener('blur', function () {
+    //     checkInputHideLabel(this.parentElement, this);
+    // }, false);
+    // emailInput.addEventListener('blur', function () {
+    //     checkInputHideLabel(this.parentElement, this);
+    // }, false);
+    // textArea.addEventListener('blur', function () {
+    //     checkInputHideLabel(this.parentElement, this);
+    // }, false);
 
 
     //Hamburger Menu
@@ -73,11 +74,11 @@ function pageReady() {
         console.log('form submit');
         return true;
     } //end thankYouMsg
-    formHandler.onsubmit = thankYouMsg;
+    // formHandler.onsubmit = thankYouMsg;
 
-    //Update the Copyright to current year
-    var copyright = document.getElementById('year');
-    var currentYear = new Date();
-    copyright.textContent = currentYear.getFullYear();
+    // //Update the Copyright to current year
+    // var copyright = document.getElementById('year');
+    // var currentYear = new Date();
+    // copyright.textContent = currentYear.getFullYear();
 
 } //End of pageReady
