@@ -32,9 +32,9 @@ require_once 'project-collection.php';
                 </div>
             </section>
         </header>
-        <main class="mt-2 mt-sm-5 ">
+        <main class="mt-2 mt-sm-5">
             <section id="work">
-                <h2 class="sub-heading mb-5 d-none d-sm-block">My Work</h2>
+                <h2 class="mb-5 d-none d-sm-block text-center">My Work</h2>
                 <!-- PROJECT GALLERY THUMBNAILS -->
                 <div id="gallery" class="row justify-content-lg-around">
                     <figure class="d-none d-sm-block col-6 col-lg-3 text-center img-container">
@@ -63,7 +63,45 @@ require_once 'project-collection.php';
                     <?php include 'project-view.php'?>
                 <?php endforeach; ?>
             </section>
-            
+            <div id="contact" class="row">
+                <section id="messageForm" class="d-none d-sm-block mx-0 p-3 col-12 col-lg-8">
+                    <h2 class="text-center py-3">Let&#39;s work together</h2>
+                    <form action="#" method="post" name="contact" class="container-fluid px-2">
+                        <div class="row mb-3 mb-lg-5 justify-content-between">
+                            <div class="col-4 pl-0">
+                                <label class="p-2" id="name-lbl" for="name-input">Your Name</label>
+                                <input  class="col-12 py-2" type="text" id="name-input" name="user_name" required >
+                            </div>
+                            <div class="col-8 px-0">
+                                <label class="p-2" id="email-lbl" for="email-input">Your E-mail</label>
+                                <input class="col-12 py-2" type="email" id="email-input" name="email" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mb-lg-5">
+                            <label class="p-2" id="message-lbl" for="message">Your Project details</label>
+                            <textarea class="col-12" id="message" name="message"></textarea>
+                        </div>
+                        <div class="row">
+                            <input class="btn" type="submit" value="Send Message">
+                            <label class="col-8" id="feedback"></label>
+                        </div>
+                    </form>
+                </section>            
+                <section class="container contact mx-0 p-3 col-12 col-lg-4" id="social">
+                    <h2 class="text-center py-4">Let&#39;s get connected</h2>
+                    <ul class="row mb-2 px-lg-1 pl-xl-4 align-items-center flex-lg-column">
+                        <li class="col-4 col-lg-12 mb-md-3 text-center text-lg-left">
+                            <a href="https://github.com/paul-ooi" target="_blank"><span class="fab fa-github-square" aria-hidden="true"></span><span class='contact-text m-0 ml-md-2'>Fork me on Github</span></a>
+                        </li>
+                        <li class="col-4 col-lg-12 mb-md-3 text-center text-lg-left">
+                            <a href="https://linkedin.com/in/paulooi" target="_blank"><span class="fab fa-linkedin" aria-hidden="true"></span><span class='contact-text m-0 ml-md-2'>Connect with me on LinkedIn</span></a>
+                        </li>
+                        <li class="col-4 col-lg-12 mb-md-3 text-center text-lg-left">
+                            <a href="https://behance.net/paulooidesign" target="_blank"><span class="fab fa-behance-square" aria-hidden="true"></span><span class='contact-text m-0 ml-md-2'>Follow me on Behance</span></a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
             
         </main>
         <?php require_once 'footer.php'; ?>

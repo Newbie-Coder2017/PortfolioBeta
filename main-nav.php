@@ -17,7 +17,7 @@
                 <a href="resume.php" class="nav-link">resume</a>
             </li>
             <li class="nav-item">
-                <a href="#social" class="nav-link">contact</a>
+                <a href="#contact" class="nav-link">contact</a>
             </li>
         </ul>
     </nav>

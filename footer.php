@@ -1,4 +1,4 @@
-<footer>
+<footer class="my-4">
       <h2 class="sr-only">Copyright</h2>
       <a href="http://www.paulooidesign.ca" target="_blank"><span>&copy; <span id="year"><?php echo date('Y')?></span> Paul Ooi Development &amp; Design</span></a>
       <!-- TO DO - LOOK AT NECESSARY PRIVACY AND TERMS OF USE EXAMPLES TO ADAPT FOR PORTFOLIO SITE -->
